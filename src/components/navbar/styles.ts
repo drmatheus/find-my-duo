@@ -43,6 +43,12 @@ export const StyledMobileNavbar = styled.aside`
   align-items: flex-end;
   overflow-y: hidden;
   z-index: 1;
+
+  & > div {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
   & > div > button {
     background-color: transparent;
     height: 60px;
