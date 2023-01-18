@@ -34,10 +34,10 @@ export interface iPost {
 }
 
 export type iUser = {
-  url: string | undefined;
-  socialMedia: string | undefined;
-  email: string | undefined;
   name: string | undefined;
+  socialMedia: string | undefined;
+  url: string | undefined;
+  email: string | undefined;
   favoriteGames: any;
   id: string;
   token: string;

@@ -1,10 +1,13 @@
 import styled from "styled-components";
 
 export const UserMessageContainer = styled.ul`
-  width: 100%;
+  max-width: 100%;
   background-color: var(--gray5);
   display: flex;
   flex-direction: column;
+  height: 100%;
+  overflow: scroll;
+  padding-bottom: 4rem;
 `;
 
 export const StyledUserMessageCard = styled.li`
@@ -26,6 +29,9 @@ export const StyledUserMessageCard = styled.li`
   p {
     color: var(--gray1);
     font-size: var(--font5);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 15ch;
   }
 
   figure {
@@ -37,8 +43,8 @@ export const StyledUserMessageCard = styled.li`
   }
 
   img {
-    height: 100%;
-    width: 68px;
+    width: 70px;
+    height: 70px;
     border-radius: 100%;
     object-fit: cover;
   }
